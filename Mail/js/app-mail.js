@@ -11,11 +11,16 @@ let emailInserita = prompt("Inserisci la tua mail")
 
 //creo la lista di mail che possono accedere
 
-let listaEmail = ["pippo@gmail.com", "pluto@gmail.com", "paperino@gmail.com", "minnie@gmail.com", "gianfranco@gmail.com"];
+let listaEmail = [
+    "pippo@gmail.com",
+    "pluto@gmail.com",
+    "paperino9@gmail.com",
+    "minnie@gmail.com",
+    "gianfranco26@gmail.com"];
 
 //creo un ciclo
 
-let emailValida = -1;
+let emailValida;
 
 for (let i = 0; i < listaEmail.length; i++) {
 
@@ -24,7 +29,7 @@ for (let i = 0; i < listaEmail.length; i++) {
     }
 }
 
-if (emailValida < 0) {
+if (emailValida !== undefined) {
     alert("La mail che hai inserito (" + emailInserita + ") non è valida")
     console.log("email invalida")
 } else {
